@@ -1,0 +1,13 @@
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\Natura_Nova_Ata_3.0.0.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\Natura_Nova_Ata_3.0.0.pdb
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\Adodb.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\EntityFramework.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\EntityFramework.SqlServer.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\Microsoft.Exchange.WebServices.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\Adodb.pdb
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\EntityFramework.xml
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\EntityFramework.SqlServer.xml
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\bin\Microsoft.Exchange.WebServices.xml
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\obj\Debug\Natura_Nova_Ata_3.0.0.csprojResolveAssemblyReference.cache
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\obj\Debug\Natura_Nova_Ata_3.0.0.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0\obj\Debug\Natura_Nova_Ata_3.0.0.pdb

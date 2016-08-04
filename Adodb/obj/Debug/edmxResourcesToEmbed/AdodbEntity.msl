@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="nova_ataModelStoreContainer" CdmEntityContainer="nova_ataEntities">
+    <EntitySetMapping Name="cockpit">
+      <EntityTypeMapping TypeName="nova_ataModel.cockpit">
+        <MappingFragment StoreEntitySet="cockpit">
+          <ScalarProperty Name="hash" ColumnName="hash" />
+          <ScalarProperty Name="parentZpac" ColumnName="parentZpac" />
+          <ScalarProperty Name="parentSellCode" ColumnName="parentSellCode" />
+          <ScalarProperty Name="dummyCode" ColumnName="dummyCode" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="projectId" ColumnName="projectId" />
+          <ScalarProperty Name="cockpitId" ColumnName="cockpitId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cockpit_sap">
+      <EntityTypeMapping TypeName="nova_ataModel.cockpit_sap">
+        <MappingFragment StoreEntitySet="cockpit_sap">
+          <ScalarProperty Name="utlEndTime" ColumnName="utlEndTime" />
+          <ScalarProperty Name="deadline" ColumnName="deadline" />
+          <ScalarProperty Name="endTime" ColumnName="endTime" />
+          <ScalarProperty Name="finished" ColumnName="finished" />
+          <ScalarProperty Name="realExDate" ColumnName="realExDate" />
+          <ScalarProperty Name="realInDate" ColumnName="realInDate" />
+          <ScalarProperty Name="generationTime" ColumnName="generationTime" />
+          <ScalarProperty Name="generationDate" ColumnName="generationDate" />
+          <ScalarProperty Name="currentResponsible" ColumnName="currentResponsible" />
+          <ScalarProperty Name="responsible" ColumnName="responsible" />
+          <ScalarProperty Name="messageText" ColumnName="messageText" />
+          <ScalarProperty Name="status3" ColumnName="status3" />
+          <ScalarProperty Name="status2" ColumnName="status2" />
+          <ScalarProperty Name="status1" ColumnName="status1" />
+          <ScalarProperty Name="workItemText" ColumnName="workItemText" />
+          <ScalarProperty Name="task" ColumnName="task" />
+          <ScalarProperty Name="ident" ColumnName="ident" />
+          <ScalarProperty Name="workflow" ColumnName="workflow" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="prcStand" ColumnName="prcStand" />
+          <ScalarProperty Name="uvl" ColumnName="uvl" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="un" ColumnName="un" />
+          <ScalarProperty Name="net" ColumnName="net" />
+          <ScalarProperty Name="gross" ColumnName="gross" />
+          <ScalarProperty Name="umb" ColumnName="umb" />
+          <ScalarProperty Name="sm" ColumnName="sm" />
+          <ScalarProperty Name="tmat" ColumnName="tmat" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="createdIn" ColumnName="createdIn" />
+          <ScalarProperty Name="materialShortText" ColumnName="materialShortText" />
+          <ScalarProperty Name="sellCode" ColumnName="sellCode" />
+          <ScalarProperty Name="material" ColumnName="material" />
+          <ScalarProperty Name="codCntrl" ColumnName="codCntrl" />
+          <ScalarProperty Name="cen" ColumnName="cen" />
+          <ScalarProperty Name="cockpitSAPId" ColumnName="cockpitSAPId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="comments">
+      <EntityTypeMapping TypeName="nova_ataModel.comments">
+        <MappingFragment StoreEntitySet="comments">
+          <ScalarProperty Name="creationTime" ColumnName="creationTime" />
+          <ScalarProperty Name="creationDate" ColumnName="creationDate" />
+          <ScalarProperty Name="owner" ColumnName="owner" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="taskId" ColumnName="taskId" />
+          <ScalarProperty Name="commentId" ColumnName="commentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logs">
+      <EntityTypeMapping TypeName="nova_ataModel.logs">
+        <MappingFragment StoreEntitySet="logs">
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="attribute2" ColumnName="attribute2" />
+          <ScalarProperty Name="attribute1" ColumnName="attribute1" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="requester" ColumnName="requester" />
+          <ScalarProperty Name="requestType" ColumnName="requestType" />
+          <ScalarProperty Name="controller" ColumnName="controller" />
+          <ScalarProperty Name="logId" ColumnName="logId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="projects">
+      <EntityTypeMapping TypeName="nova_ataModel.projects">
+        <MappingFragment StoreEntitySet="projects">
+          <ScalarProperty Name="qualityComplexity" ColumnName="qualityComplexity" />
+          <ScalarProperty Name="processComplexity" ColumnName="processComplexity" />
+          <ScalarProperty Name="marketingComplexity" ColumnName="marketingComplexity" />
+          <ScalarProperty Name="packagingComplexity" ColumnName="packagingComplexity" />
+          <ScalarProperty Name="formulationComplexity" ColumnName="formulationComplexity" />
+          <ScalarProperty Name="fillingComplexity" ColumnName="fillingComplexity" />
+          <ScalarProperty Name="dlComplexity" ColumnName="dlComplexity" />
+          <ScalarProperty Name="consumerSafetyComplexity" ColumnName="consumerSafetyComplexity" />
+          <ScalarProperty Name="timeToMarket" ColumnName="timeToMarket" />
+          <ScalarProperty Name="timeToDelivery" ColumnName="timeToDelivery" />
+          <ScalarProperty Name="projectOrganization" ColumnName="projectOrganization" />
+          <ScalarProperty Name="itemType" ColumnName="itemType" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="first12MonthsIncrementalGrossRevenue" ColumnName="first12MonthsIncrementalGrossRevenue" />
+          <ScalarProperty Name="first12MonthsGrossRevenue" ColumnName="first12MonthsGrossRevenue" />
+          <ScalarProperty Name="commemorationDate" ColumnName="commemorationDate" />
+          <ScalarProperty Name="targetRegions" ColumnName="targetRegions" />
+          <ScalarProperty Name="launchOrMaintenance" ColumnName="launchOrMaintenance" />
+          <ScalarProperty Name="parentProgramIDNumber" ColumnName="parentProgramIDNumber" />
+          <ScalarProperty Name="parentProgramName" ColumnName="parentProgramName" />
+          <ScalarProperty Name="scoreSharedGoalsEV" ColumnName="scoreSharedGoalsEV" />
+          <ScalarProperty Name="scoreSharedGoalsEX" ColumnName="scoreSharedGoalsEX" />
+          <ScalarProperty Name="scoreSharedGoalsDL" ColumnName="scoreSharedGoalsDL" />
+          <ScalarProperty Name="scoreSharedGoalsVL" ColumnName="scoreSharedGoalsVL" />
+          <ScalarProperty Name="scoreSharedGoalsPT" ColumnName="scoreSharedGoalsPT" />
+          <ScalarProperty Name="scoreSharedGoalsBF" ColumnName="scoreSharedGoalsBF" />
+          <ScalarProperty Name="scoreSharedGoalsPBF" ColumnName="scoreSharedGoalsPBF" />
+          <ScalarProperty Name="prototypeEVGateAppDate" ColumnName="prototypeEVGateAppDate" />
+          <ScalarProperty Name="prototypeEXGateAppDate" ColumnName="prototypeEXGateAppDate" />
+          <ScalarProperty Name="prototypeDLGateAppDate" ColumnName="prototypeDLGateAppDate" />
+          <ScalarProperty Name="prototypeVLGateAppDate" ColumnName="prototypeVLGateAppDate" />
+          <ScalarProperty Name="prototypePTGateAppDate" ColumnName="prototypePTGateAppDate" />
+          <ScalarProperty Name="prototypeBFGateAppDate" ColumnName="prototypeBFGateAppDate" />
+          <ScalarProperty Name="prototypePBFGateAppDate" ColumnName="prototypePBFGateAppDate" />
+          <ScalarProperty Name="operatingCostCenter" ColumnName="operatingCostCenter" />
+          <ScalarProperty Name="dateLastUpdated" ColumnName="dateLastUpdated" />
+          <ScalarProperty Name="creationDate" ColumnName="creationDate" />
+          <ScalarProperty Name="lastEstimatedEVGateAppDate" ColumnName="lastEstimatedEVGateAppDate" />
+          <ScalarProperty Name="lastEstimatedEXGateAppDate" ColumnName="lastEstimatedEXGateAppDate" />
+          <ScalarProperty Name="lastEstimatedDLGateAppDate" ColumnName="lastEstimatedDLGateAppDate" />
+          <ScalarProperty Name="lastEstimatedVLGateAppDate" ColumnName="lastEstimatedVLGateAppDate" />
+          <ScalarProperty Name="lastEstimatedPTGateAppDate" ColumnName="lastEstimatedPTGateAppDate" />
+          <ScalarProperty Name="lastEstimatedBFGateAppDate" ColumnName="lastEstimatedBFGateAppDate" />
+          <ScalarProperty Name="lastEstimatedPBFGateAppDate" ColumnName="lastEstimatedPBFGateAppDate" />
+          <ScalarProperty Name="actualEVGateAppDate" ColumnName="actualEVGateAppDate" />
+          <ScalarProperty Name="actualEXGateAppDate" ColumnName="actualEXGateAppDate" />
+          <ScalarProperty Name="actualDLGateAppDate" ColumnName="actualDLGateAppDate" />
+          <ScalarProperty Name="actualVLGateAppDate" ColumnName="actualVLGateAppDate" />
+          <ScalarProperty Name="actualPTGateAppDate" ColumnName="actualPTGateAppDate" />
+          <ScalarProperty Name="actualBFGateAppDate" ColumnName="actualBFGateAppDate" />
+          <ScalarProperty Name="actualPBFGateAppDate" ColumnName="actualPBFGateAppDate" />
+          <ScalarProperty Name="displayLaunchYear" ColumnName="displayLaunchYear" />
+          <ScalarProperty Name="displayLaunchCycle" ColumnName="displayLaunchCycle" />
+          <ScalarProperty Name="displayEVGateAppDate" ColumnName="displayEVGateAppDate" />
+          <ScalarProperty Name="displayEXGateAppDate" ColumnName="displayEXGateAppDate" />
+          <ScalarProperty Name="displayDLGateAppDate" ColumnName="displayDLGateAppDate" />
+          <ScalarProperty Name="displayVLGateAppDate" ColumnName="displayVLGateAppDate" />
+          <ScalarProperty Name="displayPTGateAppDate" ColumnName="displayPTGateAppDate" />
+          <ScalarProperty Name="displayBFGateAppDate" ColumnName="displayBFGateAppDate" />
+          <ScalarProperty Name="displayPBFGateAppDate" ColumnName="displayPBFGateAppDate" />
+          <ScalarProperty Name="originalLaunchYear" ColumnName="originalLaunchYear" />
+          <ScalarProperty Name="originalEVGateAppDate" ColumnName="originalEVGateAppDate" />
+          <ScalarProperty Name="originalEXGateAppDate" ColumnName="originalEXGateAppDate" />
+          <ScalarProperty Name="originalDLGateAppDate" ColumnName="originalDLGateAppDate" />
+          <ScalarProperty Name="originalVLGateAppDate" ColumnName="originalVLGateAppDate" />
+          <ScalarProperty Name="originalPTGateAppDate" ColumnName="originalPTGateAppDate" />
+          <ScalarProperty Name="originalBFGateAppDate" ColumnName="originalBFGateAppDate" />
+          <ScalarProperty Name="originalPBFGateAppDate" ColumnName="originalPBFGateAppDate" />
+          <ScalarProperty Name="newSkus" ColumnName="newSkus" />
+          <ScalarProperty Name="totalSkus" ColumnName="totalSkus" />
+          <ScalarProperty Name="productProjectStage" ColumnName="productProjectStage" />
+          <ScalarProperty Name="archetype" ColumnName="archetype" />
+          <ScalarProperty Name="subBrand" ColumnName="subBrand" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="businessUnit" ColumnName="businessUnit" />
+          <ScalarProperty Name="scheduleStatus" ColumnName="scheduleStatus" />
+          <ScalarProperty Name="projectStatus" ColumnName="projectStatus" />
+          <ScalarProperty Name="meaningLevel" ColumnName="meaningLevel" />
+          <ScalarProperty Name="leaderOrSubmitter" ColumnName="leaderOrSubmitter" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="projectId" ColumnName="projectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tasks">
+      <EntityTypeMapping TypeName="nova_ataModel.tasks">
+        <MappingFragment StoreEntitySet="tasks">
+          <ScalarProperty Name="wasInsertedAfterFreezing" ColumnName="wasInsertedAfterFreezing" />
+          <ScalarProperty Name="wasDeleted" ColumnName="wasDeleted" />
+          <ScalarProperty Name="isFreezed" ColumnName="isFreezed" />
+          <ScalarProperty Name="newFinish" ColumnName="newFinish" />
+          <ScalarProperty Name="newStart" ColumnName="newStart" />
+          <ScalarProperty Name="actualFinishDate" ColumnName="actualFinishDate" />
+          <ScalarProperty Name="reworkCount" ColumnName="reworkCount" />
+          <ScalarProperty Name="creationDate" ColumnName="creationDate" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="delayDescription" ColumnName="delayDescription" />
+          <ScalarProperty Name="delayReason" ColumnName="delayReason" />
+          <ScalarProperty Name="hash" ColumnName="hash" />
+          <ScalarProperty Name="ident" ColumnName="ident" />
+          <ScalarProperty Name="idParentProjectTask" ColumnName="idParentProjectTask" />
+          <ScalarProperty Name="idProjectTask" ColumnName="idProjectTask" />
+          <ScalarProperty Name="activityOrigin" ColumnName="activityOrigin" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="finish" ColumnName="finish" />
+          <ScalarProperty Name="start" ColumnName="start" />
+          <ScalarProperty Name="responsible" ColumnName="responsible" />
+          <ScalarProperty Name="grandParent" ColumnName="grandParent" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="activityDescription" ColumnName="activityDescription" />
+          <ScalarProperty Name="activityTitle" ColumnName="activityTitle" />
+          <ScalarProperty Name="criticalActivity" ColumnName="criticalActivity" />
+          <ScalarProperty Name="pWork" ColumnName="pWork" />
+          <ScalarProperty Name="product" ColumnName="product" />
+          <ScalarProperty Name="meetingDate" ColumnName="meetingDate" />
+          <ScalarProperty Name="notifyMe" ColumnName="notifyMe" />
+          <ScalarProperty Name="projectId" ColumnName="projectId" />
+          <ScalarProperty Name="taskId" ColumnName="taskId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="team_allocation">
+      <EntityTypeMapping TypeName="nova_ataModel.team_allocation">
+        <MappingFragment StoreEntitySet="team_allocation">
+          <ScalarProperty Name="allocationFinishDate" ColumnName="allocationFinishDate" />
+          <ScalarProperty Name="allocationStartDate" ColumnName="allocationStartDate" />
+          <ScalarProperty Name="gate" ColumnName="gate" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="projectId" ColumnName="projectId" />
+          <ScalarProperty Name="teamAllocationId" ColumnName="teamAllocationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="nova_ataModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="managerEmail" ColumnName="managerEmail" />
+          <ScalarProperty Name="managerLogin" ColumnName="managerLogin" />
+          <ScalarProperty Name="managerName" ColumnName="managerName" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="exchangeName" ColumnName="exchangeName" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="alias" ColumnName="alias" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="notifications">
+      <EntityTypeMapping TypeName="nova_ataModel.notifications">
+        <MappingFragment StoreEntitySet="notifications">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="projectId" ColumnName="projectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

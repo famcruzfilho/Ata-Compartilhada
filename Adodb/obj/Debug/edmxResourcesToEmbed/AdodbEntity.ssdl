@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="nova_ataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="cockpit">
+    <Key>
+      <PropertyRef Name="cockpitId" />
+    </Key>
+    <Property Name="cockpitId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="projectId" Type="int" Nullable="false" />
+    <Property Name="description" Type="text" />
+    <Property Name="type" Type="nvarchar" MaxLength="500" />
+    <Property Name="code" Type="nvarchar" MaxLength="500" />
+    <Property Name="dummyCode" Type="nvarchar" MaxLength="500" />
+    <Property Name="parentSellCode" Type="nvarchar" MaxLength="500" />
+    <Property Name="parentZpac" Type="nvarchar" MaxLength="500" />
+    <Property Name="hash" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="cockpit_sap">
+    <Key>
+      <PropertyRef Name="cockpitSAPId" />
+    </Key>
+    <Property Name="cockpitSAPId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cen" Type="nvarchar" MaxLength="100" />
+    <Property Name="codCntrl" Type="nvarchar" MaxLength="100" />
+    <Property Name="material" Type="nvarchar" MaxLength="100" />
+    <Property Name="sellCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="materialShortText" Type="text" />
+    <Property Name="createdIn" Type="nvarchar" MaxLength="100" />
+    <Property Name="created" Type="nvarchar" MaxLength="100" />
+    <Property Name="tmat" Type="nvarchar" MaxLength="100" />
+    <Property Name="sm" Type="nvarchar" MaxLength="100" />
+    <Property Name="umb" Type="nvarchar" MaxLength="100" />
+    <Property Name="gross" Type="nvarchar" MaxLength="100" />
+    <Property Name="net" Type="nvarchar" MaxLength="100" />
+    <Property Name="un" Type="nvarchar" MaxLength="100" />
+    <Property Name="volume" Type="nvarchar" MaxLength="100" />
+    <Property Name="uvl" Type="nvarchar" MaxLength="100" />
+    <Property Name="prcStand" Type="nvarchar" MaxLength="100" />
+    <Property Name="money" Type="nvarchar" MaxLength="100" />
+    <Property Name="workflow" Type="nvarchar" MaxLength="100" />
+    <Property Name="ident" Type="nvarchar" MaxLength="100" />
+    <Property Name="task" Type="nvarchar" MaxLength="100" />
+    <Property Name="workItemText" Type="text" />
+    <Property Name="status1" Type="nvarchar" MaxLength="100" />
+    <Property Name="status2" Type="nvarchar" MaxLength="100" />
+    <Property Name="status3" Type="nvarchar" MaxLength="100" />
+    <Property Name="messageText" Type="text" />
+    <Property Name="responsible" Type="nvarchar" MaxLength="100" />
+    <Property Name="currentResponsible" Type="nvarchar" MaxLength="100" />
+    <Property Name="generationDate" Type="nvarchar" MaxLength="100" />
+    <Property Name="generationTime" Type="nvarchar" MaxLength="100" />
+    <Property Name="realInDate" Type="nvarchar" MaxLength="100" />
+    <Property Name="realExDate" Type="nvarchar" MaxLength="100" />
+    <Property Name="finished" Type="nvarchar" MaxLength="100" />
+    <Property Name="endTime" Type="nvarchar" MaxLength="100" />
+    <Property Name="deadline" Type="nvarchar" MaxLength="100" />
+    <Property Name="utlEndTime" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="comments">
+    <Key>
+      <PropertyRef Name="commentId" />
+    </Key>
+    <Property Name="commentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="taskId" Type="int" Nullable="false" />
+    <Property Name="comment" Type="text" Nullable="false" />
+    <Property Name="owner" Type="int" Nullable="false" />
+    <Property Name="creationDate" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="creationTime" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="logs">
+    <Key>
+      <PropertyRef Name="logId" />
+    </Key>
+    <Property Name="logId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="controller" Type="nchar" MaxLength="1000" Nullable="false" />
+    <Property Name="requestType" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="requester" Type="int" Nullable="false" />
+    <Property Name="date" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="time" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="attribute1" Type="nchar" MaxLength="50" />
+    <Property Name="attribute2" Type="nchar" MaxLength="50" />
+    <Property Name="body" Type="text" />
+  </EntityType>
+  <EntityType Name="notifications">
+    <Key>
+      <PropertyRef Name="projectId" />
+    </Key>
+    <Property Name="projectId" Type="int" Nullable="false" />
+    <Property Name="status" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="projects">
+    <Key>
+      <PropertyRef Name="projectId" />
+    </Key>
+    <Property Name="projectId" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="leaderOrSubmitter" Type="int" Nullable="false" />
+    <Property Name="meaningLevel" Type="nvarchar" MaxLength="45" />
+    <Property Name="projectStatus" Type="nvarchar" MaxLength="45" />
+    <Property Name="scheduleStatus" Type="nvarchar" MaxLength="45" />
+    <Property Name="businessUnit" Type="nvarchar" MaxLength="50" />
+    <Property Name="category" Type="nvarchar" MaxLength="45" />
+    <Property Name="subBrand" Type="nvarchar" MaxLength="45" />
+    <Property Name="archetype" Type="nvarchar" MaxLength="45" />
+    <Property Name="productProjectStage" Type="nvarchar" MaxLength="45" />
+    <Property Name="totalSkus" Type="int" />
+    <Property Name="newSkus" Type="int" />
+    <Property Name="originalPBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="originalBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="originalPTGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="originalVLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="originalDLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="originalEXGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="originalEVGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="originalLaunchYear" Type="nvarchar" MaxLength="4" />
+    <Property Name="displayPBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="displayBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="displayPTGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="displayVLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="displayDLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="displayEXGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="displayEVGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="displayLaunchCycle" Type="nvarchar" MaxLength="50" />
+    <Property Name="displayLaunchYear" Type="nvarchar" MaxLength="4" />
+    <Property Name="actualPBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="actualBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="actualPTGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="actualVLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="actualDLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="actualEXGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="actualEVGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="lastEstimatedPBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="lastEstimatedBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="lastEstimatedPTGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="lastEstimatedVLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="lastEstimatedDLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="lastEstimatedEXGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="lastEstimatedEVGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="creationDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="dateLastUpdated" Type="nvarchar" MaxLength="10" />
+    <Property Name="operatingCostCenter" Type="nvarchar" MaxLength="45" />
+    <Property Name="prototypePBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="prototypeBFGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="prototypePTGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="prototypeVLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="prototypeDLGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="prototypeEXGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="prototypeEVGateAppDate" Type="nvarchar" MaxLength="10" />
+    <Property Name="scoreSharedGoalsPBF" Type="nvarchar" MaxLength="10" />
+    <Property Name="scoreSharedGoalsBF" Type="nvarchar" MaxLength="10" />
+    <Property Name="scoreSharedGoalsPT" Type="nvarchar" MaxLength="10" />
+    <Property Name="scoreSharedGoalsVL" Type="nvarchar" MaxLength="10" />
+    <Property Name="scoreSharedGoalsDL" Type="nvarchar" MaxLength="10" />
+    <Property Name="scoreSharedGoalsEX" Type="nvarchar" MaxLength="10" />
+    <Property Name="scoreSharedGoalsEV" Type="nvarchar" MaxLength="10" />
+    <Property Name="parentProgramName" Type="nvarchar" MaxLength="100" />
+    <Property Name="parentProgramIDNumber" Type="nvarchar" MaxLength="10" />
+    <Property Name="launchOrMaintenance" Type="nvarchar" MaxLength="100" />
+    <Property Name="targetRegions" Type="nvarchar" MaxLength="200" />
+    <Property Name="commemorationDate" Type="nvarchar" MaxLength="200" />
+    <Property Name="first12MonthsGrossRevenue" Type="nvarchar" MaxLength="100" />
+    <Property Name="first12MonthsIncrementalGrossRevenue" Type="nvarchar" MaxLength="100" />
+    <Property Name="description" Type="text" />
+    <Property Name="itemType" Type="nvarchar" MaxLength="100" />
+    <Property Name="projectOrganization" Type="nvarchar" MaxLength="45" />
+    <Property Name="timeToDelivery" Type="nvarchar" MaxLength="45" />
+    <Property Name="timeToMarket" Type="nvarchar" MaxLength="45" />
+    <Property Name="consumerSafetyComplexity" Type="int" />
+    <Property Name="dlComplexity" Type="int" />
+    <Property Name="fillingComplexity" Type="int" />
+    <Property Name="formulationComplexity" Type="int" />
+    <Property Name="packagingComplexity" Type="int" />
+    <Property Name="marketingComplexity" Type="int" />
+    <Property Name="processComplexity" Type="int" />
+    <Property Name="qualityComplexity" Type="int" />
+  </EntityType>
+  <EntityType Name="tasks">
+    <Key>
+      <PropertyRef Name="taskId" />
+    </Key>
+    <Property Name="taskId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="projectId" Type="int" Nullable="false" />
+    <Property Name="notifyMe" Type="nvarchar" MaxLength="50" />
+    <Property Name="meetingDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="product" Type="nvarchar" MaxLength="4000" />
+    <Property Name="pWork" Type="nvarchar" MaxLength="1000" />
+    <Property Name="criticalActivity" Type="nvarchar" MaxLength="1000" />
+    <Property Name="activityTitle" Type="nvarchar" MaxLength="4000" Nullable="false" />
+    <Property Name="activityDescription" Type="nvarchar" MaxLength="4000" />
+    <Property Name="parent" Type="nvarchar" MaxLength="1000" />
+    <Property Name="grandParent" Type="nvarchar" MaxLength="1000" />
+    <Property Name="responsible" Type="nvarchar" MaxLength="100" />
+    <Property Name="start" Type="nvarchar" MaxLength="50" />
+    <Property Name="finish" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="nvarchar" MaxLength="50" />
+    <Property Name="activityOrigin" Type="nvarchar" MaxLength="100" />
+    <Property Name="idProjectTask" Type="nvarchar" MaxLength="100" />
+    <Property Name="idParentProjectTask" Type="nvarchar" MaxLength="100" />
+    <Property Name="ident" Type="nvarchar" MaxLength="100" />
+    <Property Name="hash" Type="nvarchar" MaxLength="100" />
+    <Property Name="delayReason" Type="nvarchar" MaxLength="4000" />
+    <Property Name="delayDescription" Type="text" />
+    <Property Name="createdBy" Type="int" />
+    <Property Name="creationDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="reworkCount" Type="int" />
+    <Property Name="actualFinishDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="newStart" Type="nvarchar" MaxLength="50" />
+    <Property Name="newFinish" Type="nvarchar" MaxLength="50" />
+    <Property Name="isFreezed" Type="nvarchar" MaxLength="50" />
+    <Property Name="wasDeleted" Type="nvarchar" MaxLength="50" />
+    <Property Name="wasInsertedAfterFreezing" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="team_allocation">
+    <Key>
+      <PropertyRef Name="teamAllocationId" />
+    </Key>
+    <Property Name="teamAllocationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="projectId" Type="int" Nullable="false" />
+    <Property Name="userId" Type="int" Nullable="false" />
+    <Property Name="status" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="gate" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="allocationStartDate" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="allocationFinishDate" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="alias" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="exchangeName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="area" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="managerName" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="managerLogin" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="managerEmail" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="45" />
+  </EntityType>
+  <Association Name="FK_comments_tasks">
+    <End Role="users" Type="Self.users" Multiplicity="1" />
+    <End Role="comments" Type="Self.comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="comments">
+        <PropertyRef Name="owner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_comments_tasks1">
+    <End Role="tasks" Type="Self.tasks" Multiplicity="1" />
+    <End Role="comments" Type="Self.comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tasks">
+        <PropertyRef Name="taskId" />
+      </Principal>
+      <Dependent Role="comments">
+        <PropertyRef Name="taskId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_logs_users">
+    <End Role="users" Type="Self.users" Multiplicity="1" />
+    <End Role="logs" Type="Self.logs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="logs">
+        <PropertyRef Name="requester" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_notifications_projects">
+    <End Role="projects" Type="Self.projects" Multiplicity="1" />
+    <End Role="notifications" Type="Self.notifications" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="projects">
+        <PropertyRef Name="projectId" />
+      </Principal>
+      <Dependent Role="notifications">
+        <PropertyRef Name="projectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_projects_users">
+    <End Role="users" Type="Self.users" Multiplicity="1" />
+    <End Role="projects" Type="Self.projects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="projects">
+        <PropertyRef Name="leaderOrSubmitter" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tasks_projects">
+    <End Role="projects" Type="Self.projects" Multiplicity="1" />
+    <End Role="tasks" Type="Self.tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="projects">
+        <PropertyRef Name="projectId" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="projectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tasks_users">
+    <End Role="users" Type="Self.users" Multiplicity="0..1" />
+    <End Role="tasks" Type="Self.tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="createdBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_team_allocation_projects">
+    <End Role="projects" Type="Self.projects" Multiplicity="1" />
+    <End Role="team_allocation" Type="Self.team_allocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="projects">
+        <PropertyRef Name="projectId" />
+      </Principal>
+      <Dependent Role="team_allocation">
+        <PropertyRef Name="projectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_team_allocation_users">
+    <End Role="users" Type="Self.users" Multiplicity="1" />
+    <End Role="team_allocation" Type="Self.team_allocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="team_allocation">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="nova_ataModelStoreContainer">
+    <EntitySet Name="cockpit" EntityType="Self.cockpit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cockpit_sap" EntityType="Self.cockpit_sap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="comments" EntityType="Self.comments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="logs" EntityType="Self.logs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="notifications" EntityType="Self.notifications" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="projects" EntityType="Self.projects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tasks" EntityType="Self.tasks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="team_allocation" EntityType="Self.team_allocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_comments_tasks" Association="Self.FK_comments_tasks">
+      <End Role="users" EntitySet="users" />
+      <End Role="comments" EntitySet="comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_comments_tasks1" Association="Self.FK_comments_tasks1">
+      <End Role="tasks" EntitySet="tasks" />
+      <End Role="comments" EntitySet="comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_logs_users" Association="Self.FK_logs_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="logs" EntitySet="logs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_notifications_projects" Association="Self.FK_notifications_projects">
+      <End Role="projects" EntitySet="projects" />
+      <End Role="notifications" EntitySet="notifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_projects_users" Association="Self.FK_projects_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="projects" EntitySet="projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tasks_projects" Association="Self.FK_tasks_projects">
+      <End Role="projects" EntitySet="projects" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tasks_users" Association="Self.FK_tasks_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_team_allocation_projects" Association="Self.FK_team_allocation_projects">
+      <End Role="projects" EntitySet="projects" />
+      <End Role="team_allocation" EntitySet="team_allocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_team_allocation_users" Association="Self.FK_team_allocation_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="team_allocation" EntitySet="team_allocation" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

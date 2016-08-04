@@ -1,0 +1,10 @@
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\bin\Debug\Adodb.dll.config
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\bin\Debug\Adodb.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\bin\Debug\Adodb.pdb
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\bin\Debug\EntityFramework.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\bin\Debug\EntityFramework.SqlServer.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\bin\Debug\EntityFramework.xml
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\bin\Debug\EntityFramework.SqlServer.xml
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\obj\Debug\Adodb.dll
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\obj\Debug\Adodb.pdb
+B:\WORKSPACE\VISUAL_STUDIO\Natura_Nova_Ata_3.0.0\Adodb\obj\Debug\Adodb.csprojResolveAssemblyReference.cache

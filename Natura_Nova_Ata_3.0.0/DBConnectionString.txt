@@ -1,0 +1,17 @@
+﻿*Para conectar em minha máquina local
+string connectionString = "ZGF0YSBzb3VyY2U9LlxTUUxFeHByZXNzO2luaXRpYWwgY2F0YWxvZz1ub3ZhX2F0YTtwZXJzaXN0IHNlY3VyaXR5IGluZm89VHJ1ZTt1c2VyIGlkPXNhO3Bhc3N3b3JkPVByb2Nlc3NvSW5vdmFjYW9AMjAxNQ==";
+Byte[] bytes = Convert.FromBase64String(connectionString);
+connectionString = ASCIIEncoding.ASCII.GetString(bytes);
+Database.Connection.ConnectionString = connectionString;
+
+*Para conectar no Bender
+string connectionString = "";
+Byte[] bytes = Convert.FromBase64String(connectionString);
+connectionString = ASCIIEncoding.ASCII.GetString(bytes);
+Database.Connection.ConnectionString = connectionString;
+
+*Para conectar no Novo Servidor
+string connectionString = "ZGF0YSBzb3VyY2U9MTcyLjI2LjQ3LjIzN1xJTk9WQUNBTztpbml0aWFsIGNhdGFsb2c9c2hhcmVkX21pbnV0ZXM7cGVyc2lzdCBzZWN1cml0eSBpbmZvPVRydWU7dXNlciBpZD1wYWxoYWNvO3Bhc3N3b3JkPVByb2Nlc3NvSW5vdmFjYW9AMjAxNQ==";
+Byte[] bytes = Convert.FromBase64String(connectionString);
+connectionString = ASCIIEncoding.ASCII.GetString(bytes);
+Database.Connection.ConnectionString = connectionString;

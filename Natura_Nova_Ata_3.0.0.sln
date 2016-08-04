@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natura_Nova_Ata_3.0.0", "Natura_Nova_Ata_3.0.0\Natura_Nova_Ata_3.0.0.csproj", "{C3A33961-F407-44FE-B3D9-62E009C2E7F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adodb", "Adodb\Adodb.csproj", "{55AFBC15-8B45-44DC-AC74-CDCF3963EA36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3A33961-F407-44FE-B3D9-62E009C2E7F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A33961-F407-44FE-B3D9-62E009C2E7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A33961-F407-44FE-B3D9-62E009C2E7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A33961-F407-44FE-B3D9-62E009C2E7F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55AFBC15-8B45-44DC-AC74-CDCF3963EA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55AFBC15-8B45-44DC-AC74-CDCF3963EA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55AFBC15-8B45-44DC-AC74-CDCF3963EA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55AFBC15-8B45-44DC-AC74-CDCF3963EA36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

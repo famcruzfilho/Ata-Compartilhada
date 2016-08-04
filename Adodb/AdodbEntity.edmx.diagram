@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="44fd860b1f384af499a347f4fb444d41" Name="Diagram1">
+        <EntityTypeShape EntityType="nova_ataModel.cockpit" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="nova_ataModel.cockpit_sap" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="nova_ataModel.comments" Width="1.5" PointX="6" PointY="12.875" />
+        <EntityTypeShape EntityType="nova_ataModel.logs" Width="1.5" PointX="3" PointY="3.625" />
+        <EntityTypeShape EntityType="nova_ataModel.projects" Width="1.5" PointX="3" PointY="10.625" />
+        <EntityTypeShape EntityType="nova_ataModel.tasks" Width="1.5" PointX="5.25" PointY="16.5" />
+        <EntityTypeShape EntityType="nova_ataModel.team_allocation" Width="1.5" PointX="8.25" PointY="15.875" />
+        <EntityTypeShape EntityType="nova_ataModel.users" Width="1.5" PointX="0.75" PointY="12.125" />
+        <AssociationConnector Association="nova_ataModel.FK_comments_tasks" />
+        <AssociationConnector Association="nova_ataModel.FK_comments_tasks1" />
+        <AssociationConnector Association="nova_ataModel.FK_logs_users" />
+        <AssociationConnector Association="nova_ataModel.FK_projects_users" />
+        <AssociationConnector Association="nova_ataModel.FK_tasks_projects" />
+        <AssociationConnector Association="nova_ataModel.FK_team_allocation_projects" />
+        <AssociationConnector Association="nova_ataModel.FK_tasks_users" />
+        <AssociationConnector Association="nova_ataModel.FK_team_allocation_users" />
+        <EntityTypeShape EntityType="nova_ataModel.notifications" Width="1.5" PointX="5.25" PointY="25.5" />
+        <AssociationConnector Association="nova_ataModel.FK_notifications_projects" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
